@@ -33,13 +33,11 @@ def context():
 @pytest.mark.parametrize("windows", YN_CHOICES, ids=lambda yn: f"win:{yn}")
 @pytest.mark.parametrize("use_docker", YN_CHOICES, ids=lambda yn: f"docker:{yn}")
 @pytest.mark.parametrize("use_compressor", YN_CHOICES, ids=lambda yn: f"cmpr:{yn}")
-@pytest.mark.parametrize("use_whitenoise", YN_CHOICES, ids=lambda yn: f"wnoise:{yn}")
 @pytest.mark.parametrize("cloud_provider", CLOUD_CHOICES, ids=lambda yn: f"cloud:{yn}")
 def context_combination(
     windows,
     use_docker,
     use_compressor,
-    use_whitenoise,
     cloud_provider,
 ):
     """Fixture that parametrize the function where it's used."""
@@ -47,7 +45,6 @@ def context_combination(
         "windows": windows,
         "use_docker": use_docker,
         "use_compressor": use_compressor,
-        "use_whitenoise": use_whitenoise,
         "cloud_provider": cloud_provider,
     }
 

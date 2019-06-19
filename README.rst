@@ -57,7 +57,7 @@ Optional Integrations
 
 *These features can be enabled during initial project setup.*
 
-* Serve static files from Amazon S3, Google Cloud Storage or Whitenoise_
+* Serve static files from Amazon S3, Google Cloud Storage_
 
 .. _Bootstrap: https://github.com/twbs/bootstrap
 .. _django-environ: https://github.com/joke2k/django-environ
@@ -65,7 +65,6 @@ Optional Integrations
 .. _django-allauth: https://github.com/pennersr/django-allauth
 .. _django-avatar: https://github.com/grantmcconnaughey/django-avatar
 .. _Mailgun: http://www.mailgun.com/
-.. _Whitenoise: https://whitenoise.readthedocs.io/
 .. _Anymail: https://github.com/anymail/django-anymail
 .. _docker-compose: https://github.com/docker/compose
 .. _PythonAnywhere: https://www.pythonanywhere.com/
@@ -146,7 +145,6 @@ Answer the prompts with your own desired options_. For example::
     domain_name [example.com]: myreddit.com
     version [0.1.0]: 0.0.1
     timezone [UTC]: America/Los_Angeles
-    use_whitenoise [n]: n
     use_pycharm [n]: y
     windows [n]: n
     use_docker [n]: n

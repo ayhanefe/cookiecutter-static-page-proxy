@@ -5,9 +5,6 @@ Pillow==6.0.0  # https://github.com/python-pillow/Pillow
 rcssmin==1.0.6{% if cookiecutter.windows == 'y' and cookiecutter.use_docker == 'n' %} --install-option="--without-c-extensions"{% endif %}  # https://github.com/ndparker/rcssmin
 {%- endif %}
 argon2-cffi==19.1.0  # https://github.com/hynek/argon2_cffi
-{%- if cookiecutter.use_whitenoise == 'y' %}
-whitenoise==4.1.2  # https://github.com/evansd/whitenoise
-{%- endif %}
 redis==3.2.1  # https://github.com/antirez/redis
 
 # Django
