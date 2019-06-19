@@ -255,12 +255,11 @@ def main():
     else:
         remove_docker_files()
 
-    if "{{ cookiecutter.use_heroku }}".lower() == "n":
-        remove_heroku_files()
+
+    remove_heroku_files()
 
     if (
         "{{ cookiecutter.use_docker }}".lower() == "n"
-        and "{{ cookiecutter.use_heroku }}".lower() == "n"
     ):
         if "{{ cookiecutter.keep_local_envs_in_vcs }}".lower() == "y":
             print(
@@ -269,11 +268,7 @@ def main():
                 "make sense given your current setup." + TERMINATOR
             )
         remove_envs_and_associated_files()
-    else:
-        append_to_gitignore_file(".env")
-        append_to_gitignore_file(".envs/*")
-        if "{{ cookiecutter.keep_local_envs_in_vcs }}".lower() == "y":
-            append_to_gitignore_file("!.envs/.local/")
+
 
     if "{{ cookiecutter.js_task_runner}}".lower() == "none":
         remove_gulp_files()

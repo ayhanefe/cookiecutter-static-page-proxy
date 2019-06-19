@@ -49,7 +49,6 @@ Features
 * Send emails via Anymail_ (using Mailgun_ by default, but switchable)
 * Media storage using Amazon S3 or Google Cloud Storage
 * Docker support using docker-compose_ for development and production (using Traefik_ with LetsEncrypt_ support)
-* Procfile_ for deploying to Heroku
 * Instructions for deploying to PythonAnywhere_
 * Run tests with unittest or pytest
 * Customizable PostgreSQL version
@@ -69,7 +68,6 @@ Optional Integrations
 .. _12-Factor: http://12factor.net/
 .. _django-allauth: https://github.com/pennersr/django-allauth
 .. _django-avatar: https://github.com/grantmcconnaughey/django-avatar
-.. _Procfile: https://devcenter.heroku.com/articles/procfile
 .. _Mailgun: http://www.mailgun.com/
 .. _Whitenoise: https://whitenoise.readthedocs.io/
 .. _Anymail: https://github.com/anymail/django-anymail
@@ -156,7 +154,6 @@ Answer the prompts with your own desired options_. For example::
     use_pycharm [n]: y
     windows [n]: n
     use_docker [n]: n
-    use_heroku [n]: y
     use_compressor [n]: y
     Select postgresql_version:
     1 - 11.3
