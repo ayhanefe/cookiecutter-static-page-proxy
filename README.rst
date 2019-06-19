@@ -18,7 +18,7 @@ First, install Cookiecutter::
 
 Now run it against this repo::
 
-    $ cookiecutter https://github.com/pydanny/cookiecutter-static-page-proxy
+    $ cookiecutter https://github.com/ayhanefe/cookiecutter-static-page-proxy
 
 You'll be prompted for some values. Provide them, then a proxy installed project
 will be created for you.
@@ -27,5 +27,5 @@ will be created for you.
 Note
 -------
 
-This project is a modified version of cookiecutter-django, which can be found here;
-cookiecutter-django: https://github.com/pydanny/cookiecutter-django
+This project is a modified version of cookiecutter-django, which can be found here:
+https://github.com/pydanny/cookiecutter-django
