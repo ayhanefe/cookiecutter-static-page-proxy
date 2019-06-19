@@ -14,7 +14,7 @@ services:
     depends_on:
       - postgres
       - redis
-    volume:
+    volumes:
       - ./static_pages:/app/proxy/templates/proxy
     env_file:
       - ./.envs/.production/.django
@@ -47,7 +47,7 @@ services:
 
   redis:
     image: redis:5.0
-  
+
   awscli:
     build:
       context: .
