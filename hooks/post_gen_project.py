@@ -70,9 +70,7 @@ def remove_heroku_files():
     for file_name in file_names:
         if (
             file_name == "requirements.txt"
-            and "{{ cookiecutter.use_travisci }}".lower() == "y"
         ):
-            # don't remove the file if we are using travisci but not using heroku
             continue
         os.remove(file_name)
 
@@ -282,8 +280,8 @@ def main():
             "media files won't be served in production." + TERMINATOR
         )
 
-    if "{{ cookiecutter.use_travisci }}".lower() == "n":
-        remove_dottravisyml_file()
+
+    remove_dottravisyml_file()
 
     print(SUCCESS + "Project initialized, keep up the good work!" + TERMINATOR)
 
