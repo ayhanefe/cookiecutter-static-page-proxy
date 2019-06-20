@@ -15,7 +15,6 @@ services:
       - postgres
       - redis
     volumes:
-      - .:/app # added this
       - ./static_pages:/app/proxy/templates/proxy
     env_file:
       - ./.envs/.production/.django
